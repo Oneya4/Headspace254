@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Merienda|Roboto|Source+Sans+Pro:400,900&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+}
+
+:root{
+	--main-font:;
+	--secondary-font:;
+	--main-font-color:;
+	--secondary-font-color: linear-gradient(to right, #462523, #cb9b51, #f6e27a, #f6f2c0, #f6e27a, #cb9b51, #462523);
+}
+
+section{
+	height: 100vh;
+	width: 100%;
+}
+
+.hero{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #222; 
+}
+
+.logo{
+	
+}
+
+p{
+	position: absolute;
+	bottom: 20%;
+	font-size: 3em;
+	font-family: Roboto;
+	font-weight: 600;
+	padding-top: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-right: -1px;
+	overflow: hidden;
+	background: var(--secondary-font-color);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	animation: animate 4s linear infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: rgba(255,255,255, .1); 
+	text-shadow:  #111 1px 1px 1px, #111 1px 2px 1px, 
+				  #111 1px 3px 1px, #111 1px 4px 1px, 
+				  #111 1px 5px 1px, #111 1px 6px 1px, 
+				  #111 1px 7px 1px, #111 1px 8px 1px,
+				  	#222 1px 18px 6px,
+				  	#222 1px 22px 10px,
+				  	#222 1px 25px 30px,
+				  	#222 1px 30px 60px;
+}
+
+@keyframes animate{
+	0%{
+		background-position: -500%;
+	}
+	100%{
+		background-position: 500%;
+	}
+}
+
